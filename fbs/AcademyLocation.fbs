@@ -1,0 +1,64 @@
+namespace FlatData;
+
+enum School : int
+{
+    None = 0,
+    Hyakkiyako = 1,
+    RedWinter = 2,
+    Trinity = 3,
+    Gehenna = 4,
+    Abydos = 5,
+    Millennium = 6,
+    Arius = 7,
+    Shanhaijing = 8,
+    Valkyrie = 9,
+    WildHunt = 10,
+    SRT = 11,
+    SCHALE = 12,
+    ETC = 13,
+    Tokiwadai = 14,
+    Sakugawa = 15,
+}
+
+enum ParcelType : int {
+        None = 0,
+        Character = 1,
+        Currency = 2,
+        Equipment = 3,
+        Item = 4,
+        GachaGroup = 5,
+        Product = 6,
+        Shop = 7,
+        MemoryLobby = 8,
+        AccountExp = 9,
+        CharacterExp = 10,
+        FavorExp = 11,
+        TSS = 12,
+        Furniture = 13,
+        ShopRefresh = 14,
+        LocationExp = 15,
+        Recipe = 16,
+        CharacterWeapon = 17,
+        ProductMonthly = 18,
+        CharacterGear = 19,
+        IdCardBackground = 20,
+        Emblem = 21,
+        Sticker = 22,
+        Costume = 23,
+}
+
+table AcademyLocationExcel {
+    id:long;
+    localize_etc_id:uint;
+    prefab_path:string;
+    icon_image_path:string;
+    open_condition:[School];
+    open_condition_count:[long];
+    reward_parcel_type:ParcelType;
+    reward_parcel_id:long;
+    open_teacher_rank:long;
+}
+
+table AcademyLocationExcelTable{
+    data_list:[AcademyLocationExcel];
+}

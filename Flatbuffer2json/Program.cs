@@ -218,7 +218,7 @@ namespace Flatbuffer2json
         static void Main(string[] args)
         {
             //Change name to what you want to dump(lowercase)
-            string inputBytesFile = "academyfavorscheduleexceltable.bytes";
+            string inputBytesFile = "academylocationexceltable.bytes";
             string fileName = Path.GetFileNameWithoutExtension(inputBytesFile);
             string outputFile = fileName + ".json";
 
