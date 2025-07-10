@@ -1,0 +1,50 @@
+namespace FlatData;
+
+enum ParcelType : int {
+        None = 0,
+        Character = 1,
+        Currency = 2,
+        Equipment = 3,
+        Item = 4,
+        GachaGroup = 5,
+        Product = 6,
+        Shop = 7,
+        MemoryLobby = 8,
+        AccountExp = 9,
+        CharacterExp = 10,
+        FavorExp = 11,
+        TSS = 12,
+        Furniture = 13,
+        ShopRefresh = 14,
+        LocationExp = 15,
+        Recipe = 16,
+        CharacterWeapon = 17,
+        ProductMonthly = 18,
+        CharacterGear = 19,
+        IdCardBackground = 20,
+        Emblem = 21,
+        Sticker = 22,
+        Costume = 23,
+}
+
+
+table AcademyFavorScheduleExcel {
+    id:long;
+    character_id:long;
+    schedule_group_id:long;
+    order_in_group:long;
+    location:string;
+    localize_scenario_id:uint;
+    favor_rank:long;
+    secret_stone_amount:long;
+    scenario_sript_group_id:long;
+    reward_parcel_type:[ParcelType];
+    reward_parcel_id:[long];
+    reward_amount:[long];
+}
+
+table AcademyFavorScheduleExcelTable{
+    data_list:[AcademyFavorScheduleExcel];
+}
+
+root_type AcademyFavorScheduleExcelTable;

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecpTableZip", "DecpTableZi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decryptbytes", "Decryptbytes\Decryptbytes.csproj", "{95CC3B8F-0A0D-4AEE-9428-700EF854C80D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flatbuffer2json", "Flatbuffer2json\Flatbuffer2json.csproj", "{CC5FBA20-6146-4DF0-81A6-9AB353DC4350}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{95CC3B8F-0A0D-4AEE-9428-700EF854C80D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95CC3B8F-0A0D-4AEE-9428-700EF854C80D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95CC3B8F-0A0D-4AEE-9428-700EF854C80D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC5FBA20-6146-4DF0-81A6-9AB353DC4350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC5FBA20-6146-4DF0-81A6-9AB353DC4350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC5FBA20-6146-4DF0-81A6-9AB353DC4350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC5FBA20-6146-4DF0-81A6-9AB353DC4350}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

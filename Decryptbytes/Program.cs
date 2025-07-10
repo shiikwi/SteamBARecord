@@ -6,7 +6,7 @@ using System.Data.HashFunction.xxHash;
 
 namespace Decryptbytes
 {
-    class TableEncryptionService
+    public class TableEncryptionService
     {
         public static byte[] XOR(string name, byte[] bytes)
         {
