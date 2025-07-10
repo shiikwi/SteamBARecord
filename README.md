@@ -53,4 +53,13 @@ Use: `Decryptbytes`
 ```bash
 Decryptbytes.exe <InputBytesFolder>
 ```
-解密后部分文件内容依然是经过base64编码存储的
+
+## bytes2json
+解密后的bytes文件为[Flatbuffer](https://github.com/google/flatbuffers)类型，字段部分XOR加密，字符串还经过base64编码  
+密钥算法同上，文件名去除`ExcelTable`  
+使用[Flatbuffer](https://github.com/google/flatbuffers/releases/)生成C#，参考[fbs](https://github.com/shiikwi/SteamBARecord/blob/main/fbs/AcademyFavorSchedule.fbs)
+```bash
+flatc.exe --csharp -o . xxx.fbs
+```
+Use: `Flatbuffer2json`  
+替换输入文件名，生成json
