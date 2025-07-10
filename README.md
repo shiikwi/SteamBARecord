@@ -1,5 +1,5 @@
 # Steam BA Record
-
+[中文](https://github.com/shiikwi/SteamBARecord/blob/main/README_ZH.md)  
 record and tools of steam Blue Archive
 
 ## il2cpp dump
