@@ -1,0 +1,20 @@
+namespace FlatData;
+
+enum Nation : int
+{
+    None = 0,
+    All = 1,
+    JP = 2,
+    GL = 3,
+    KR = 4,
+}
+
+table VoiceExcel {
+    unique_id:long;
+    id:uint;
+    nation:[Nation];
+    path:[string];
+    volume:[float];
+}
+
+root_type VoiceExcel;

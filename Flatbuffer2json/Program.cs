@@ -16,7 +16,7 @@ namespace Flatbuffer2json
     {
         static void Main(string[] args)
         {
-#if true
+#if false
             //EncryptBytesFile dump
             //Change filename to what you want to dump(lower case)
 
@@ -37,7 +37,7 @@ namespace Flatbuffer2json
             //Change dbtablename to tablename from sqlite db
 
             string dbPath = "./ExcelDB.db";
-            string dbtablename = "ScenarioScriptDBSchema";
+            string dbtablename = "VoiceDBSchema";
 
             var ouputfile = $"{dbtablename}.json";
             var converter = new DbTableConvert();

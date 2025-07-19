@@ -261,7 +261,7 @@ namespace Flatbuffer2json
 
                 var result = TableDecryptionService.ConvertFlatBuffer(row, xorkey);
 
-                return JsonConvert.SerializeObject(new List<dynamic> { result }, Formatting.Indented);
+                return JsonConvert.SerializeObject(result, Formatting.Indented);
             }
 
         }
