@@ -1,0 +1,21 @@
+namespace FlatData;
+
+table ScenarioScriptExcel {
+    group_id:long;
+    selection_group:long;
+    b_g_m_id:long;
+    sound:string;
+    transition:uint;
+    b_g_name:uint;
+    b_g_effect:uint;
+    popup_file_name:string;
+    script_kr:string;
+    text_jp:string;
+    text_th:string;
+    text_tw:string;
+    text_en:string;
+    voice_id:uint;
+    teen_mode:bool;
+}
+
+root_type ScenarioScriptExcel;
