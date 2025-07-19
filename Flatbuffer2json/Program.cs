@@ -37,7 +37,7 @@ namespace Flatbuffer2json
             //Change dbtablename to tablename from sqlite db
 
             string dbPath = "./ExcelDB.db";
-            string dbtablename = "VoiceDBSchema";
+            string dbtablename = "CharacterVoiceDBSchema";
 
             var ouputfile = $"{dbtablename}.json";
             var converter = new DbTableConvert();
