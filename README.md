@@ -57,9 +57,8 @@ Decryptbytes.exe <InputBytesFolder>
 ## bytes2json
 Decrypted `.bytes` file format is [Flatbuffer](https://github.com/google/flatbuffers). The value is still xor encrypted and strings are base64-encoded
 Key generation follows the same method as above，just using filename with `ExcelTable` removed    
-Use: [Flatbuffer](https://github.com/google/flatbuffers/releases/) to generated C#，refer to [fbs](https://github.com/shiikwi/SteamBARecord/blob/main/fbs/AcademyFavorSchedule.fbs)
-```bash
-flatc.exe --csharp -o . xxx.fbs
-```
 Use: `Flatbuffer2json`  
-Change inputfilename，then it will dump to json
+```bash
+Flatbuffer2json.exe <bytes/db> <path to bytes folder or ExcelDB.db file>
+```
+Thanks to [Excel.fbs](https://github.com/1F1E33-float32/Tools/blob/main/OnlineGame/Unity/Blue%20Archive/Excel.fbs)
