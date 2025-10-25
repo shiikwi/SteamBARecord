@@ -474,3 +474,5 @@ dkms.conf
 *.dwo
 
 GameAssembly.dll.i64
+GenXORKey.py
+fbs/
